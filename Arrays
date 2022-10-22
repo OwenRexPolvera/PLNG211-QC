@@ -1,0 +1,339 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/OwenRexPolvera/PLNG211-QC/blob/main/Arrays\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sLckTObb14p2",
+        "outputId": "baa6932a-d723-4b90-fddd-5bea24f630c3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The animals are: ['cat', 'dog', 'fish']\n",
+            "The animals in the first list is cat\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Accessing the elements in the array\n",
+        "animals = [\"cat\", \"dog\", \"fish\"]\n",
+        "print(\"The animals are:\",animals)\n",
+        "print(\"The animals in the first list is\",animals[0])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Modifying the element/s in the array\n",
+        "animals = [\"cat\", \"dog\", \"fish\"]\n",
+        "animals[0] = \"monkey\"\n",
+        "print(animals)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XlfHvyD96uhr",
+        "outputId": "8aa7ae6f-6f93-439b-8f8a-9df0324d4850"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "['monkey', 'dog', 'fish']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Length of the array\n",
+        "animals = [\"cat\", \"dog\", \"fish\"]\n",
+        "x = len(animals)\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Di1iNnTG7J3O",
+        "outputId": "2ccc01c1-bb6f-44d3-81c1-02f6d0b1afbe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Looping Array Elements\n",
+        "animals = [\"cat\", \"dog\", \"fish\"]\n",
+        "for x in animals:\n",
+        "  print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vBUjtA-m7Yek",
+        "outputId": "789296a4-337c-4a85-978a-85cd73616387"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "cat\n",
+            "dog\n",
+            "fish\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Adding elements in the last list of an array\n",
+        "animals = [\"cat\", \"dog\", \"fish\"]\n",
+        "animals.insert(1,\"monkey\")\n",
+        "print(animals)\n",
+        "#append\n",
+        "animals.append(\"bird\")\n",
+        "print(animals)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nn4ZcsBh74UE",
+        "outputId": "52440c31-89dc-4f35-e03c-825402e0b437"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['cat', 'monkey', 'dog', 'fish']\n",
+            "['cat', 'monkey', 'dog', 'fish', 'bird']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Removing\n",
+        "animals.pop(3)\n",
+        "print(animals)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZRzW-62w8CZy",
+        "outputId": "128e935d-0747-46f7-f8da-e8bdbd5e0e7c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['bird', 'fish', 'dog', 'cat']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from array import *\n",
+        "#Pycharm community/student\n",
+        "\n",
+        "a =  array(\"d\",[1.55,2.77,3.7])\n",
+        "print(a)\n",
+        "a.typecode"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        },
+        "id": "VVYWjerwBMRx",
+        "outputId": "673cb21a-3d4e-44d8-f008-ec8b2b073c25"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "array('d', [1.55, 2.77, 3.7])\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'d'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 27
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from array import *\n",
+        "a = array(\"i\",[1,2,3])\n",
+        "a.itemsize"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WLdF01SLDu-Q",
+        "outputId": "fe07eb98-4f76-4b95-9849-ef26e1f7a3fc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from array import *\n",
+        "a = array(\"i\",[1,2,3])\n",
+        "a.append(4)\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zV8uo09WD2T_",
+        "outputId": "611d6d83-eb29-4a0c-96e9-afaf61692937"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "array('i', [1, 2, 3, 4])\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from array import *\n",
+        "a = array(\"i\",[1,2,3])\n",
+        "a.byteswap()\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K8EId9WCD9IK",
+        "outputId": "f0252e4d-56ee-4882-84bc-0184cd18cd4a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "array('i', [16777216, 33554432, 50331648])\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [26,49,98,87,62,75]\n",
+        "#sum of even numbers\n",
+        "# 26 + 98 + 62 = 186\n",
+        "\n",
+        "total = sum([num for num in numbers if(num%2==0)])\n",
+        "print(total)"
+      ],
+      "metadata": {
+        "id": "cJBWXxF-9BYn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "62PIC_NDECDY"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
