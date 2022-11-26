@@ -1,0 +1,167 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMPWTLohUlyus+asjdDoIKh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/OwenRexPolvera/PLNG211-QC/blob/main/Final%20Term\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#FINALS"
+      ],
+      "metadata": {
+        "id": "nBmL3jNacapU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OsgO2nXwYZKc",
+        "outputId": "c7adc45c-f8b1-4fa7-ae25-1cbce2bd51c6"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "100\n",
+            "Celsius 37.78\n",
+            "kelvin 310.93\n"
+          ]
+        }
+      ],
+      "source": [
+        "#writing your own function/conversion\n",
+        "def convert_to_celcius(fahrenheit):\n",
+        "  return (fahrenheit-32) * 5/9\n",
+        "\n",
+        "def convert_to_kelvin(fahrenheit):\n",
+        "  return ((fahrenheit -32) *5/9) + 273.15\n",
+        "fahrenheit = int(input())\n",
+        "\n",
+        "print(\"Celsius\",round(convert_to_celcius(fahrenheit),2))\n",
+        "print(\"kelvin\",round(convert_to_kelvin(fahrenheit),2))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def Name():\n",
+        "  pass"
+      ],
+      "metadata": {
+        "id": "F_j0QAKRY4LI"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def my_function(fname):\n",
+        "  return(fname + \"Sayo \")\n",
+        "\n",
+        "my_function(\" Mam\")\n",
+        "my_function(\" Maria\")\n",
+        "my_function(\" Rizette\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "pXCEU-XxZA8c",
+        "outputId": "9c3953e4-228c-4aa5-dac8-d61aa3f5bc29"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "' RizetteSayo '"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#return a value\n",
+        "\n",
+        "def my_function(x):\n",
+        "  return(5+x)\n",
+        "\n",
+        "print(my_function(4))\n",
+        "print(my_function(5))\n",
+        "print(my_function(6))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qkyxfpO5ZDy7",
+        "outputId": "0a3434cd-ca1f-427a-f172-9959cc10c200"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n",
+            "10\n",
+            "11\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Exercise 1\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "TNdC2vrLbqvc"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
